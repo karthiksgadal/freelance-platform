@@ -35,7 +35,7 @@ const protectedRoutes = require("./routes/protected");
 const loginRoutes = require("./routes/login"); // ✅
 const jobRoutes = require('./routes/job');     // ✅ Correct path
 const applicationRoutes = require('./routes/application');
-const reviewRoutes = require('./routes/review');
+// const reviewRoutes = require('./routes/review');
 const adminRoutes = require('./routes/admin');
 
 app.use("/api", authRoutes);
@@ -43,7 +43,7 @@ app.use("/api", protectedRoutes);
 app.use("/api", loginRoutes); // ✅
 app.use('/api', jobRoutes);                    // ✅ Mounted properly
 app.use("/api", applicationRoutes);
-app.use('/api', reviewRoutes);
+// app.use('/api', reviewRoutes);
 app.use('/api', adminRoutes);
 
 
